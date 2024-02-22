@@ -9,4 +9,8 @@ public class Groupe {
         this.lesCours = new ArrayList<>();
         // this.lesEtudiants = new ArrayList<>();
     }
+
+    public List<Cours> getCours(){
+        return this.lesCours;
+    }
 }
