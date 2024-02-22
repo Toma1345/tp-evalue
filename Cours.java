@@ -1,11 +1,11 @@
 public class Cours{
-    private Matiere nomMatiere;
+    private User nomMatiere;
 
     public Cours(){
 
     }
 
-    public Matiere getCours(){
+    public User getCours(){
         return nomMatiere;
     }
 }
