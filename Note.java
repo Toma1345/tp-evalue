@@ -12,4 +12,24 @@ public class Note {
         this.etudiant=etudiant;
     }
 
+    public double getNote(){
+        return this.note;
+    }
+
+    public String getNomControle(){
+        return this.nomCotrole;
+    }
+
+    public String getNomMatiere(){
+        return this.matiere.getNom();
+    }
+
+    public String getNomEtudiant(){
+        return this.etudiant.getNom();
+    }
+
+    public void changerNote(double valeur){
+        this.note=valeur;
+    }
+
 }
