@@ -19,10 +19,6 @@ public class Horaire {
         this.lesCours.add(new Cours(nom, this));
     }
 
-    public void ajouterSalle(String nom){
-        this.lesSalle.add(new Salle(nom, this));
-    }
-
     public LocalDateTime getStartDate(){
         return this.startDate;
     }
