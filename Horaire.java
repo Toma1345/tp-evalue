@@ -15,10 +15,8 @@ public class Horaire {
         this.lesCours = new ArrayList<>();
     }
 
-    public void ajouterCours(String nom){
-        this.lesCours.add(new Cours(nom, this));
-    }
-
+    public void ajouterCours(Matiere nomMatiere, User utilisateur){
+        this.lesCours.add(new Cours(nomMatiere, this, utilisateur));
     }
 
     public LocalDateTime getStartDate(){
