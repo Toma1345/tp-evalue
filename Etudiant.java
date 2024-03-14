@@ -46,5 +46,19 @@ public class Etudiant {
         return notes;
     }
 
-    public 
+    public double getMoyenneGeneral(){
+        double total=0;
+        int nbNotes=0;
+        for (Note note : this.notes){
+            total += note.getNote()*note.getCoef();
+            nbNotes += note.getCoef();
+        }
+        return total/nbNotes;
+    }
+
+    public void ajouterNote(double note, int coef, String nomControle, Matiere matiere){
+        Note lanote = new Note(note, coef, nomControle,matiere, this);
+        this.notes.add(lanote);
+        matiere.ajouterNote(lanote);
+    }
 }
