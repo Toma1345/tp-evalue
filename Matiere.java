@@ -22,6 +22,7 @@ public enum Matiere{
         this.notes.add(note);
     }
 
+
     public double moyenneMatiere(){
         double sommeNote=0;
         int sommeCoef=0;
