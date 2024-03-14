@@ -1,7 +1,6 @@
 public class Salle {
     private String name;
     private Horaire hour;
-
     private int capacite;
 
     /**
@@ -41,5 +40,9 @@ public class Salle {
 
     public Salle getSalle(){
         return this;
+    }
+
+    public Horaire getHoraire(){
+        return this.hour;
     }
 }

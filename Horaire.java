@@ -19,6 +19,8 @@ public class Horaire {
         this.lesCours.add(new Cours(nom, this));
     }
 
+    }
+
     public LocalDateTime getStartDate(){
         return this.startDate;
     }

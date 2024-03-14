@@ -17,7 +17,7 @@ public class User {
     public String getName(){
         return this.name;
     }
-
+  
     public List<Cours> getCours(){
         return this.lesCours;
     }
