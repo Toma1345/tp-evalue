@@ -13,4 +13,13 @@ public class Groupe {
     public List<Cours> getCours(){
         return this.lesCours;
     }
+
+    public double getMoyenneGroupe(){
+        int nbEtudiant = this.lesEtudiants.size()
+        double sommeMoy=0;
+        for(Etudiant etu : this.lesEtudiants){
+            sommeMoy+= etu.getMoyenneGeneral();
+        }
+        return sommeMoy/nbEtudiant;
+    }
 }

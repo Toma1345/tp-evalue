@@ -32,4 +32,10 @@ public class User {
     public void creerSalle(String nomSalle, int capaciteSalle, Horaire heure){
         Salle salle = new Salle(nomSalle, heure, capaciteSalle);
     }
+
+    public void ajouterNote(double note, int coef, String nomControle, Matiere matiere, Etudiant etu){
+        Note laNote= new Note(note, coef, nomControle, matiere, etu);
+        etu.ajouterNote(laNote);
+        matiere.ajouterNote(laNote);
+    }
 }

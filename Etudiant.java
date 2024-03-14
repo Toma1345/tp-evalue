@@ -56,9 +56,7 @@ public class Etudiant {
         return total/nbNotes;
     }
 
-    public void ajouterNote(double note, int coef, String nomControle, Matiere matiere){
-        Note lanote = new Note(note, coef, nomControle,matiere, this);
-        this.notes.add(lanote);
-        matiere.ajouterNote(lanote);
+    public void ajouterNote(Note note){
+        this.notes.add(note);
     }
 }
