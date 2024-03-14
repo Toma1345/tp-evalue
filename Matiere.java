@@ -21,4 +21,14 @@ public enum Matiere{
     public void ajouterNote(Note note){
         this.notes.add(note);
     }
+
+    public double moyenneMatiere(){
+        double sommeNote=0;
+        int sommeCoef=0;
+        for(Note note : this.notes){
+            sommeNote += note.getNote()*note.getCoef();
+            sommeCoef += note.getCoef();
+        }
+        return sommeNote/sommeCoef;
+    }
 }
