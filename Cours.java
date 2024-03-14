@@ -3,16 +3,15 @@ import java.util.ArrayList;
 
 public class Cours{
     private String nomMatiere;
-    
     private Horaire hour;
     private User utilisateur;
     private List<Groupe> lesGroupes;
     private Matiere matiere;
 
-    public Cours(String nom, Horaire hour){
+    public Cours(String nom, Horaire hour, User utilisateur){
         this.nomMatiere = nom;
         this.hour = hour;
-        this.utilisateur = null;
+        this.utilisateur = utilisateur;
         this.lesGroupes = new ArrayList<>();
         this.matiere = (Matiere) nom;
     }

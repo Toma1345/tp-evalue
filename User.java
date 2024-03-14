@@ -26,7 +26,7 @@ public class User {
     // Méthodes :
     
     public void creerCours(String nomMatiere, Horaire heure) {
-        new Cours(nomMatiere, heure);
+        Cours cours = new Cours(nomMatiere, heure, this);
     }
 
     public void creerSalle(String nomSalle, int capaciteSalle, Horaire heure){
